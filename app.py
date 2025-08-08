@@ -6,6 +6,22 @@ from groq import Groq
 st.set_page_config(page_title="Groq Thinking Chatbot", layout="wide")
 
 # ------------------ SIDEBAR ------------------ #
+
+
+with st.container():
+    st.sidebar.write("🔗 github.com/0xZee - 2025")
+    st.sidebar.caption("""
+    🔑 GROQ API Key support via secrets.toml or sidebar input
+    🧠 Thinking phase with real-time reasoning display
+    📥 Expander auto-collapses when thinking is complete
+    🔄 Clear Chat Session button in the sidebar
+    🖱️ Choose between openai/gpt-oss-20b and deepseek-r1-distill-llama-70b
+    💬 Maintains full chat history in session state
+    """)
+    st.sidebar.divider()
+
+
+# ------------------ SIDEBAR ------------------ #
 st.sidebar.write("🔐 Groq API Key")
 
 # GROQ API Key handling
